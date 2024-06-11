@@ -1,0 +1,183 @@
+.logoSite{
+    width:500px;
+    height: 250px;
+}
+
+/**main*/
+main{
+    padding:10px;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.titlee{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 60px 0;
+}
+
+.btnFilter{
+    width:15em;
+    padding: 1em 0;
+    font-size: 1.5em;
+}
+/**will add when open video to back background colored and transparent*/
+.bacgrounddd{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    top:0px;
+    z-index: 1;
+    
+}
+
+
+.sections{
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    /* overflow-wrap: normal; */
+}
+
+.reponsiveVideo{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    
+   
+}
+
+
+
+
+.videooCont{
+    background-color: rgba(161, 79, 24, 0.1);
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.9rem;
+    height: auto;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    background-color: rgb(209, 154, 154);
+    position: relative;
+    box-shadow: 1px -1px 5px 8px rgb(128, 128, 128);
+}
+
+.close , .openVideo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: none;
+}
+
+.close{
+    visibility: hidden;
+}
+
+.closeVideo{
+    position: fixed;
+    right:0.3rem;
+    top:0rem;
+    visibility: visible;
+    z-index: 2;
+    background-color: rgba(0, 0, 0,0);
+    font-size: 3rem;
+    cursor: pointer;
+    color: rgb(94, 140, 181);
+}
+
+
+
+.closeVideo:hover{
+    color:red
+    
+    
+
+}
+
+.openVideo{
+    background-color: rgba(210, 35, 184, 0.8);
+    position: absolute;
+    left: 0.75rem;
+    bottom: 12%;
+}
+
+
+
+.openVideo:hover{
+    background-color: rgba(210, 35, 58,1);
+    box-shadow: 0 0 0 10px  rgba(210, 35, 58,0.6);
+}
+
+.openVideo:active{
+    box-shadow: 0 0 0 10px  rgba(210, 35, 58,0.1);
+
+
+}
+
+iframe{
+    
+    background-color: aliceblue;
+    border: 2px red solid;
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+    
+
+}
+
+.backgroundVideo{
+    width: 100%;
+    background-color: rgb(33, 125, 206);
+}
+
+/**this class will  be added to iframe tage when it is opened*/
+.ifactive{
+    width:90%;
+    position: fixed;
+    top: 50%; left: 50%;
+    height: 30rem;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+
+@media screen and (max-width:500px){
+    .filterBtn{
+        text-align: center;
+    }
+    .btnFilter{
+        margin-bottom: 1em;
+    }
+    .ifactive{
+        /**on small screen*/
+    }
+
+}
+@media screen and (min-width:502px){
+    .filterBtn{
+        text-align: center;
+    }
+
+section{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:1000px){
+
+    .reponsiveVideo{
+        justify-content: center;
+
+
+
+    }
+}
+
+

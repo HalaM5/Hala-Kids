@@ -1,0 +1,25 @@
+let pictureIndex = 1;
+showSlide(pictureIndex)
+function showSlide(n) {
+    let slides = document.getElementsByClassName('imageCont');
+    //disappear all photo
+    for(let i = 0; i< slides.length;i++){
+        slides[i].style.display = "none"
+    }
+//at the last picture we will begain from first image    
+if (n > slides.length){pictureIndex = 1}
+//show last one
+if(n <1){pictureIndex = slides.length}
+
+
+//show image one bye one
+slides[pictureIndex-1].style.display = 'block'
+}
+
+showSlide()
+
+function plusMinusArrow(n){
+    showSlide(pictureIndex  +=n)
+
+}
+
